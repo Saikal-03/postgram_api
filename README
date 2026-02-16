@@ -1,0 +1,31 @@
+Postgram
+REST API для публикаций постов и комментариями
+Как запустить:
+1. Клонируем репозиторий
+2. Создайте виртуальное пространство 
+python -m venv venv
+3. Активируйте его
+source venv/bin/activate
+4. Установите необходимые библиотеки
+pip install -r requirements.txt
+5. Миграции
+python manage.py makimigrations
+python manage.py migrate
+5. Запуск сервера:
+python manage.py migrate
+
+
+
+
+
+
+Переменные .env (я не знала где их надо остаить, пусть будет здесь)
+DB_NAME=postgram_backend_db
+DB_USER=postgram_db_user
+DB_PASSWORD=1234
+DB_HOST=localhost
+DB_PORT=5432
+
+SECRET=django-insecure-@300hi3%vnr27*#ro-!8kqv&ep1of)t@@7!vl=b#&9lgxph8n!
+
+DEBUG=on

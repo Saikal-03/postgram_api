@@ -1,0 +1,6 @@
+.vscode
+blog/__pycache__
+post/__pycache__
+users/__pycache__
+venv
+.env
