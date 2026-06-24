@@ -25,6 +25,7 @@ def authorization_api_view(request):
     return Response(status=status.HTTP_401_UNAUTHORIZED)
 
 
+@api_view(['POST'])
 def registration_api_view(request):
     serializer = UserCreateSerializer(data=request.data)
     serializer.is_valid(raise_exception=True)
